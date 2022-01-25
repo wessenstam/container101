@@ -50,16 +50,16 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Nutanix Tech Summit 2019'
-copyright = u'2018 Nutanix'
-author = u'Nutanix Global Technical Enablement'
+project = u'Container 101'
+copyright = u'2022 ThycoticCentrify'
+author = u'ThycoticCentrify Enablement'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = u''
+version = u'3.0'
 # The full version, including alpha/beta/rc tags.
 release = u''
 
