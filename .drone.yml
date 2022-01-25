@@ -6,7 +6,7 @@ steps:
 - name: Sync Files (Main)
   commands:
   # Get the repo and build the HTML files
-  - git clone --branch main "https://github.com/wessenstam/$DRONE_REPO_NAME/" /tmp/$DRONE_COMMIT_SHA
+  - git clone --branch master "https://github.com/wessenstam/$DRONE_REPO_NAME/" /tmp/$DRONE_COMMIT_SHA
   - docker run --rm --name build_dev_html -v /home/ubuntu/www/html/:/develop -v /tmp/$DRONE_COMMIT_SHA:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$DRONE_REPO_NAME
   - chown -Rf ubuntu:ubuntu /home/ubuntu/www/html/$DRONE_REPO_NAME
   # Use the files to create the PDF
